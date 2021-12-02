@@ -1,9 +1,9 @@
 <div>
-    <form wire:submit.prevent="crear">
+    <form wire:submit.prevent="editar">
         <div class="card">
 
             <div class="card-body">
-                <h3 class="card-title">Crear nuevo libro</h3>
+                <h3 class="card-title">Editar libro</h3>
 
                 @include('livewire.libros.formulario')
 
