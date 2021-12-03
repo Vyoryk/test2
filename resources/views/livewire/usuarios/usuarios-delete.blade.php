@@ -12,8 +12,8 @@
                 <div class="card-body">
                     <h2 class="card-title text-danger" style="text-align: center;">Eliminar</h2>
                     <h5 class="card-text">{{$usuario->Nombre_usuario}}</h5>
-                    <p class="card-text">Correo: {{$usuario->Editorial}}</p>
-                    <p class="card-text">Contraseña: {{$usuario->Autor}}</p>
+                    <p class="card-text">Correo: {{$usuario->Email}}</p>
+                    <p class="card-text">Contraseña: {{$usuario->Password}}</p>
                     <button wire:click="delete" class="btn btn-danger btn-sm">Confirmar</button>
                     <a href="{{route('usuarios.index')}}" class="btn btn-primary btn-sm">Regresar</a>
                 </div>

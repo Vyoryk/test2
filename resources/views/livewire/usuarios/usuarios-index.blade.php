@@ -42,7 +42,7 @@
                                     alt="">
                             </th>
                             <td>{{ $usuario->Nombre_usuario }}</td>
-                            <td>{{ $usuario->Password }}</td>
+                            <td>{{ $usuario->Email }}</td>
                             <td>
                                 <a href="{{ route('usuarios.show', $usuario) }}" title="Mostrar más" class="btn btn-info btn-sm">
                                     <i class="fas fa-eye"></i>
