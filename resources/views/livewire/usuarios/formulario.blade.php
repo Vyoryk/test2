@@ -10,7 +10,7 @@
             <img style="width: 230px;height:230px;" src="{{ $foto->temporaryUrl() }}" alt="">
         @else
             <img style="width: 230px;height:230px;"
-                src="{{ Storage::disk('public')->url($usuario->Foto != null ? $usuario->Foto : 'images/Usuarios/default.png') }}"
+                src="{{ Storage::disk('public')->url($usuario->foto != null ? $usuario->foto : 'images/Usuarios/default.png') }}"
                 alt="">
         @endif
 
@@ -30,18 +30,23 @@
         <div class="mx-auto col-10">
             <div class="form-group">
                 <label>Nombre</label>
-                <input wire:model="usuario.Nombre_usuario" type="text" class="form-control">
-                @error('usuario.Nombre_usuario') <span class="text-danger">{{ $message }}</span>@enderror
+                <input wire:model="usuario.nombre_usuario" type="text" class="form-control">
+                @error('usuario.nombre_usuario') <span class="text-danger">{{ $message }}</span>@enderror
             </div>
             <div class="form-group">
                 <label>Correo</label>
-                <input wire:model="usuario.Email" type="email" class="form-control">
-                @error('usuario.Email') <span class="text-danger">{{ $message }}</span>@enderror
+                <input wire:model="usuario.email" type="email" class="form-control">
+                @error('usuario.email') <span class="text-danger">{{ $message }}</span>@enderror
             </div>
             <div class="form-group">
                 <label>Contraseña</label>
-                <input wire:model="usuario.Password" type="password" class="form-control">
-                @error('usuario.Password') <span class="text-danger">{{ $message }}</span>@enderror
+                <input autocomplete="new-password" wire:model="password" type="password" class="form-control">
+                @error('password') <span class="text-danger">{{ $message }}</span>@enderror
+            </div>
+            <div class="form-group">
+                <label>Confirmar contraseña</label>
+                <input autocomplete="new-password" wire:model="c_password" type="password" class="form-control">
+                @error('c_password') <span class="text-danger">{{ $message }}</span>@enderror
             </div>
         </div>
     </div>

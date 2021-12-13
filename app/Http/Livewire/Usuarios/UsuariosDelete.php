@@ -18,8 +18,8 @@ class UsuariosDelete extends Component
     }
 
     public function delete(){
-        if($this->usuario->Foto =! null){
-            Storage::disk('public')->delete($this->usuario->Foto);
+        if($this->usuario->foto =! null){
+            Storage::disk('public')->delete($this->usuario->foto);
         }
 
         $this->usuario->delete();

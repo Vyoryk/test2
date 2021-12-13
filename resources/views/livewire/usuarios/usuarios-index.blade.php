@@ -37,12 +37,12 @@
                         <tr>
                             <th scope="row">{{ $usuario->id }}</th>
                             <th>
-                                <img style="width: 50px;height:50px;"
-                                    src="{{ Storage::disk('public')->url($usuario->Foto ? $usuario->Foto : 'images/Usuarios/default.png') }}"
+                                <img style="border-radius: 20px;width: 50px;height:50px;"
+                                    src="{{ Storage::disk('public')->url($usuario->foto ? $usuario->foto : 'images/Usuarios/default.png') }}"
                                     alt="">
                             </th>
-                            <td>{{ $usuario->Nombre_usuario }}</td>
-                            <td>{{ $usuario->Email }}</td>
+                            <td>{{ $usuario->nombre_usuario }}</td>
+                            <td>{{ $usuario->email }}</td>
                             <td>
                                 <a href="{{ route('usuarios.show', $usuario) }}" title="Mostrar más" class="btn btn-info btn-sm">
                                     <i class="fas fa-eye"></i>
