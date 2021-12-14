@@ -23,6 +23,7 @@ class UsuariosCreate extends Component
     {
         return view('livewire.usuarios.usuarios-create');
     }
+
     public function crear(){
         $this->validate();
         $this->usuario->password = Hash::make($this->password);

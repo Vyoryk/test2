@@ -35,6 +35,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('usuarios.index')}}">Usuarios</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('ventas.index')}}">Ventas</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">

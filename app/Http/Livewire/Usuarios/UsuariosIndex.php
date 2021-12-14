@@ -19,7 +19,7 @@ class UsuariosIndex extends Component
         ->orwhere('email', 'LIKE', '%' . $this->search . '%')
         ->orwhere('id', 'LIKE', '%' . $this->search . '%')
         ->orwhere('password', 'LIKE', '%' . $this->search . '%')
-        ->paginate(5) : [];
+        ->paginate(20) : [];
 
         return view('livewire.usuarios.usuarios-index', compact('usuarios'));
     }
