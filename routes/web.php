@@ -53,7 +53,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/usuarios/{usuario}/editar',UsuariosEdit::class)->name('usuarios.edit');
     Route::get('/usuarios/{usuario}/mostrar',UsuariosShow::class)->name('usuarios.show');
 });
-Route::get('/usuarios/crear',UsuariosCreate::class)->name('usuarios.create');
+Route::get('/usuarios/new',UsuariosCreate::class)->name('usuarios.create');
 //Protección de Rutas unitarias
 //Route::get('/libros',LibrosIndex::class)->name('libros.index')->middleware('auth');
 
